@@ -8,7 +8,7 @@ include_directories(
   include/gobject
   include/gthread)
 
-add_executable(glib_test glib_test.cpp)
+add_executable(glib_test src/glib_test.cpp)
 
 file(GLOB GLIB_PREBUILT_LIBRARIES "lib/*.so*")
 message("LIBRARIES = ${GLIB_PREBUILT_LIBRARIES}")
